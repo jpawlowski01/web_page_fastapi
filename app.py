@@ -7,6 +7,8 @@ from sqlalchemy.orm import sessionmaker
 from celery import Celery
 from fastapi.staticfiles import StaticFiles
 
+
+#zadanie
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
